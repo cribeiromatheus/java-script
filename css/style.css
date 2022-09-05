@@ -49,8 +49,12 @@ h2 {
 
 /*IDS*/
 
-#soma, #subtracao, #divisao, #multiplicacao {
+#soma, #subtracao, #divisao, #multiplicacao, #restodivisao {
     position: absolute;
+}
+
+#soma {
+    left: 30px;
 }
 
 #subtracao {
@@ -62,7 +66,11 @@ h2 {
 }
 
 #multiplicacao {
-    left: 590px;
+    left: 690px;
+}
+
+#restodivisao {
+    left: 910px;
 }
 
 
@@ -75,6 +83,30 @@ h2 {
     color: black;
 }
 
+@media(max-width: 1180px){
+    #restodivisao {
+        left: 30px;
+        top: 350px;
+    }
+
+}
+
+@media(max-width: 923px){
+    #multiplicacao {
+        left: 250px;
+        top: 350px;
+    }
+
+}
+
+@media(max-width: 685px){
+    #divisao {
+        left: 30px;
+        top: 570px;
+    }
+
+}
+
 @media(max-width: 542px) {
     header{
         height: 110px;
@@ -84,6 +116,20 @@ h2 {
     }
     header h1 {
         font-size: 4rem !important;
+    }
+
+    @media(max-width: 450px){
+        #multiplicacao {            
+            top: 790px;
+        }
+        #subtracao {            
+            top: 1010px;
+        }
+
+        #soma, #subtracao, #divisao, #multiplicacao, #restodivisao {
+            left: 90px;
+        }
+    
     }
 
     @media(max-width: 435px) {
