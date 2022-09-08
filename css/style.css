@@ -12,10 +12,16 @@ header {
 article {
     width: 45%;
     float: left;
-    margin: 2%;
+    margin: 2%;    
 }
 
-
+article h3 {
+    width: 200px;
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;      
+}
 
 input {
     display: block;
@@ -48,11 +54,6 @@ h2 {
 }
 
 /*IDS*/
-
-#soma, #subtracao, #divisao, #multiplicacao, #restodivisao {
-    position: absolute;
-}
-
 #soma {
     left: 30px;
 }
@@ -73,7 +74,15 @@ h2 {
     left: 910px;
 }
 
+#container, #container2 {    
+    float: left;
+    border: 2px solid #000;
+    width: 230px;    
+}
 
+#container {
+    margin-right: 5rem;
+}
 
 
 
@@ -128,6 +137,10 @@ h2 {
 
         #soma, #subtracao, #divisao, #multiplicacao, #restodivisao {
             left: 90px;
+        }
+
+        #container {
+            margin-left: 1rem !important;            
         }
     
     }
