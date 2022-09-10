@@ -54,26 +54,33 @@ function porcentagem() {
     document.getElementById("resultporcentagem").innerHTML = "<span style='color: black; font-weight: bold; background-color: rgb(255, 217, 0);'>" + pegar11[1] + "% de " + pegar11[0] + " é: " + (pegar11[1] / 100) * pegar11[0] + "</span> <hr>";
 }
 
-
-/*
-document.addEventListener('submit', function(evento) {
-    evento.preventDefault();
-
-    let meuFormulario = document.getElementById('form1');
-
-    let dados = new FormData(meuFormulario);
-
-    let objeto = {};
-
-    let valores = 0;
-
-    for(let key of dados.keys()) {
-        objeto[key] = dados.get(key);
-        valores += parseInt(dados.get(key));
+function calcularMedia(notas) {
+    let calculo = 0;
+    let media;
+    for(let i = 0; i < notas.length; i++) {
+        calculo += notas[i];   
     }
 
-    console.log(valores);
-    console.log(objeto);
+    media = calculo / notas.length;
+    let resultado;
+    if(media >= 7){
+        resultado = "Aprovado";
+    }else if(media <=6.9 && media >=3){
+       resultado = "Recuperação";
+    }else {
+       resultado = "Reprovado";
+    }
+    return "Média: " + media + "<br>" + resultado;
 
-});
-*/
+}
+
+
+
+function calcula() {
+    let notas= 0;
+    let pegar12 = [parseFloat(document.getElementById("n1").value), parseFloat(document.getElementById("n2").value), parseFloat(document.getElementById("n3").value), parseFloat(document.getElementById("n4").value)];
+    notas = pegar12;
+
+    document.getElementById("resultmedia").innerHTML = calcularMedia(notas);
+    
+}
