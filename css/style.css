@@ -1,0 +1,249 @@
+html {
+    font-family: 'Play', sans-serif;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 130px;
+    color: white;    
+}
+
+article {
+    width: 45%;
+    float: left;
+    margin: 2%;    
+}
+
+article h3 {
+    width: 200px;
+    background-color: #222;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;      
+}
+
+input {
+    display: block;
+    margin: 0 0 1rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+header img {
+    width: 100px;
+    margin-left: 1rem;
+    display: inline;
+    float: left;
+    margin-top: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 1.5rem;
+}
+
+h2 {
+    background-color: #222;
+    color: white;
+    width: 177px;
+    text-align: center;
+}
+
+/*IDS*/
+#soma {
+    left: 30px;
+}
+
+#subtracao {
+    left: 250px;
+}
+
+#divisao {
+    left: 470px;
+}
+
+#multiplicacao {
+    left: 690px;
+}
+
+#restodivisao {
+    left: 910px;
+}
+
+#container, #container2 {    
+    float: left;
+    border: 2px solid #000;
+    width: 230px;    
+}
+
+#container {
+    margin-right: 5rem;
+}
+
+#resultmedia {
+    position: absolute;
+    color: white;
+    left: 264px;
+    top: 87px;
+    /*border: 2px solid #000;*/ 
+    width: 100px;
+    height: 50px;   
+}
+
+#exercicio p {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#container3 {
+    overflow: hidden;
+    border: 2px solid #000;
+}
+/*Classes*/
+.buttonjava {
+    background-color: rgb(255, 217, 0);
+    color: black;
+}
+
+.imgrespon {
+    width: 590px;
+    position: relative;
+}
+
+.imgrespon img {
+    width: 100%;
+}
+
+.ajustt {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    height: 60px;
+    top: 2200px;
+}
+
+.ajustt {
+    color: white;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+@media(max-width: 1314px){
+    #segp {
+        width: 80%;
+        margin: 0 0 0 10%;
+        float: center;
+    }
+    #media h3 {
+        width: 97.5% !important;
+    }
+    #prm {
+        width: 65%;
+        margin-left: 20%;
+    }
+    .ajustt {
+        top: 3000px;
+    }    
+}
+
+@media(max-width: 1180px){
+    #restodivisao {
+        left: 30px;
+        top: 350px;
+    }
+
+}
+@media(max-width: 923px){
+    #multiplicacao {
+        left: 250px;
+        top: 350px;
+    }
+
+}
+
+@media(max-width: 844px){
+    #container2 {
+        margin-top: 1rem;
+    }
+    .ajustt {
+        top: 3800px;
+    }
+    #prm {
+        width: 50%;
+        margin-left: 40%; 
+    }
+}
+
+@media(max-width: 685px){
+    #divisao {
+        left: 30px;
+        top: 570px;
+    }
+
+}
+
+@media(max-width: 542px) {
+    header{
+        height: 110px;
+    }
+    header img {
+        width: 80px;
+    }
+    header h1 {
+        font-size: 4rem !important;
+    }
+    #prm {
+        margin-left: 30%;
+    }
+}
+
+
+    @media(max-width: 450px){
+        #multiplicacao {            
+            top: 790px;
+        }
+        #subtracao {            
+            top: 1010px;
+        }
+
+        #soma, #subtracao, #divisao, #multiplicacao, #restodivisao {
+            left: 90px;
+        }
+
+        #container {
+            margin-left: 1rem !important;            
+        }
+    
+    }
+
+    @media(max-width: 435px) {
+        header{
+            height: 80px;
+        }
+        header img {
+            width: 50px;
+        }
+        header h1 {
+            font-size: 3rem !important;
+            padding-top: 1rem !important;
+        }
+    }
+
+    @media(max-width: 312px) {
+        header{
+            height: 50px;
+        }
+        header img {
+            width: 30px;
+            margin-left: .5rem;
+            margin-top: .5rem;
+        }
+        header h1 {
+            font-size: 2rem !important;
+            padding-top: .5rem !important;
+        }
+}

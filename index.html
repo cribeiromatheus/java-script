@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Matheus da Costa Ribeiro">
+        <meta name="description" content="Página de Estudo">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <!--Fonts Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+        <script src="./js/script.js"></script>
+        <title>Javascript</title>
+    </head>
+    <body>
+        <header>
+            <img src="./img/java-script.png">
+            <h1>Java Script</h1>
+        </header>
+        <marquee position="left">Exercício para avaliação EBAC! Desenvoldido por Matheus da Costa Ribeiro</marquee>
+        <section>        
+            <article id="prm" align="center">
+                <div id="container" align="center">
+                    <h3>Operadores Aritiméticos</h3>
+                    <form id="form1">
+                            <div id="soma">
+                            <h2>Soma</h2>
+                            <input type="text" name="somajava" id="somajava" placeholder="Primeiro número">
+                            <input type="text" name="soma2java" id="soma2java" placeholder="Segundo número">
+                            <input type="button" onclick="somar()" value="Calcular" class="buttonjava">
+                            <hr>
+                            <div id="resultsoma"></div>                
+                        </div>
+                    </form>
+                    <form id="form2">
+                        <div id="subtracao">
+                            <h2>Subtração</h2>
+                            <input type="text" name="subtracaojava" id="subtracaojava" placeholder="Primeiro número">
+                            <input type="text" name="subtracao2java" id="subtracao2java" placeholder="Segundo número">
+                            <input type="button" value="Calcular" class="buttonjava" onclick="subtrair()">
+                            <hr>
+                            <div id="resultsubtracao"></div>
+                        </div>
+                    </form>
+                    <form id="form3">
+                        <div id="divisao">
+                            <h2>Divisão</h2>
+                            <input type="text" name="divisaojava" id="divisaojava" placeholder="Primeiro número">
+                            <input type="text" name="divisao2java" id="divisao2java" placeholder="Segundo número">
+                            <input type="button" value="Calcular" class="buttonjava" onclick="divisao()">
+                            <hr>
+                            <div id="resultdivisao"></div>
+                        </div>
+                    </form>
+                    <form id="form4">
+                        <div id="multiplicacao">
+                            <h2>Multiplicação</h2>
+                            <input type="text" name="multiplicacaojava" id="multiplicacaojava" placeholder="Primeiro número">
+                            <input type="text" name="multiplicacao2java" id="multiplicacao2java" placeholder="Segundo número">
+                            <input type="button" value="Calcular" class="buttonjava" onclick="multiplicacao()">
+                            <hr>
+                            <div id="resultmultiplicacao"></div>
+                        </div>
+                    </form>
+                    <form id="form5">
+                        <div id="restodivisao">
+                            <h2>Resto da Divisão</h2>
+                            <input type="text" name="restodivisaojava" id="restodivisaojava" placeholder="Primeiro número">
+                            <input type="text" name="restodivisao2java" id="restodivisao2java" placeholder="Segundo número">
+                            <input type="button" value="Calcular" class="buttonjava" onclick="restodivisao()">
+                            <hr>
+                            <div id="resultrestodivisao"></div>
+                        </div>
+                    </form>
+                </div>
+                <div id="container2" align="center">
+                    <h3>Teste Lógico / Raiz / Porcentagem</h3>
+                    <form id="form6">
+                        <div id="menorq">
+                            <h2>Menor que: </h2>
+                            <input type="text" name="menorqjava" id="menorqjava" placeholder="Primeiro número">
+                            <input type="text" name="menorq2java" id="menorq2java" placeholder="Segundo número">
+                            <input type="button" onclick="menorqr()" value="Calcular" class="buttonjava">
+                            <hr>
+                            <div id="resultmenorq"></div>                
+                        </div>
+                    </form>
+                    <form id="form7">
+                        <div id="maiorq">
+                        <h2>Maior que: </h2>
+                        <input type="text" name="maiorqjava" id="maiorqjava" placeholder="Primeiro número">
+                        <input type="text" name="maiorq2java" id="maiorq2java" placeholder="Segundo número">
+                        <input type="button" value="Calcular" class="buttonjava" onclick="maiorqr()">
+                        <hr>
+                        <div id="resultmaiorq"></div>
+                        </div>
+                    </form>
+                    <form id="form8">
+                        <div id="igual">
+                            <h2>Igual ou diferente: </h2>
+                            <input type="text" name="igualjava" id="igualjava" placeholder="Primeiro número">
+                            <input type="text" name="igual2java" id="igual2java" placeholder="Segundo número">
+                            <input type="button" value="Calcular" class="buttonjava" onclick="igual()">
+                            <hr>
+                            <div id="resultigual"></div>
+                        </div>
+                    </form>
+                    <form id="form9">
+                        <div id="raizquadrada">
+                            <h2>Raiz Quadrada: </h2>
+                            <input type="text" name="raizquadradajava" id="raizquadrada2" placeholder="Raiz quadrada de :">
+                            <input type="button" value="Calcular" class="buttonjava" onclick="raizquadrada()">
+                            <hr>
+                            <div id="resultraizquadrada"></div>
+                        </div>
+                    </form>
+                    <form id="form10">
+                        <div id="porcentagem">
+                            <h2>Porcentagem</h2>
+                            <input type="text" name="porcentagemjava" id="porcentagemjava" placeholder="Valor total">
+                            <input type="text" name="porcentagem2java" id="porcentagem2java" placeholder="Porcentagem">
+                            <input type="button" value="Calcular" class="buttonjava" onclick="porcentagem()">
+                            <hr>
+                            <div id="resultporcentagem"></div>
+                        </div>
+                    </form>
+                </div>
+            </article>
+            <article id="segp">
+                <form id="form11">
+                    <div id="container3">
+                        <div id="media" align="center">
+                            <h3 style="width: 100%">Média de notas para avaliação</h3>
+                            <h2>Média</h2>
+                            <input type="text" id="n1" placeholder="Primeiro Bimestre">
+                            <input type="text" id="n2" placeholder="Segundo Bimestre">
+                            <input type="text" id="n3" placeholder="Terceiro Bimestre">
+                            <input type="text" id="n4" placeholder="Quarto Bimestre"> 
+                            <input type="button" class="buttonjava" value="Calcular" onclick="calcula()">     
+                            <div class="imgrespon">
+                                <img src="./img/escola.svg" alt="imagem da sala de aula">
+                                <div id="resultmedia" align="center"></div>
+                            </div>                    
+                        </div>
+                        <h3 align="center" style="width: 100%">Exercício para Avaliação</h3>
+                        <div id="exercicio">
+                            <p>10 + 15 = 25 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>"10" + 2 = 102 (<span style="font-weight: bold; color: green">string</span>)</p>
+                            <p>"10" * 2 = 20 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>"10" / 3 = 3.333 (<span style="font-weight: bold; color: purple">float</span>)</p>
+                            <p>"10" % 3 = 1 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>"10" + true = 11 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>10 == "10" = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 === "10" = false (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 < 11 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 > 12 = false (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 <= 10.1 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 > 9.99 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 != "dez" = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>"10" + true = 11 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>"dez" + true = deztrue (<span style="font-weight: bold; color: green">string</span>)</p>
+                            <p>10 + false = 10 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>10 * false = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>true + true = 2 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>10++ = (<span style="font-weight: bold; color: darkgreen">incremento de 1 em 1</span>)</p>
+                            <p>10-- = (<span style="font-weight: bold; color: red">decremento de 1 em 1</span>)</p>
+                            <p>1 & 1 = 1 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>1 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>0 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>1 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>0 / 1 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>5 + 5 == 10 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>"5" * 2 > 9 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>(10 + 10) * 2 = 40 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>10 + 10 * 2 = 30 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            
+                            <p><span style="font-weight: bold; color: black    ">2- Responda as perguntas de acordo com as variáveis: </span></p>
+
+                            <p><span style="color: blue">var</span> branco = <span style="color: green">"preto"</span>;</p>
+                            <p><span style="color: blue">var</span> preto = <span style="color: green">"cinza"</span>;</p>
+                            <p><span style="color: blue">var</span> cinza = <span style="color: green">"branco"</span>;</p>
+                            <p><span style="color: blue">var</span> carro = <span style="color: green">"preto"</span>;</p>
+                            <p><span style="color: blue">var</span> valor = <span style="color: orangered">30000</span>;</p>
+                            <p><span style="color: blue">var</span> prestacao = <span style="color: orangered">750</span>;</p><br>
+                            <p>a) branco == <span style="color: green">"branco"</span>;<span style="color: blue;font-weight: bold;"> False</span>  - A variável branco está definida com o valor<span style="color: green"> "preto"</span>. </p>
+                            
+                            <p>b) branco == <span style="color: green">"cinza"</span>;<span style="color: blue;font-weight: bold;"> False</span> - Os valores de ambas as variáveis são diferentes <span style="color: purple"><strong>(</span>branco =<span style="color: green"> "preto"</span>, cinza =<span style="color: green"> "branco"</span><span style="color: purple">)</span>;</strong></p>
+
+                            <p>c) carro === branco</span>;<span style="color: blue;font-weight: bold;"> True</span>.  As variáveis são iguais tanto em valor quanto em tipo.</p>
+
+                            <p>d) A variável cavalo possui o valor de<span style="color: green">"cinza"</span>.</p>
+
+                            <p>e)<br><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> valor  </span>=<span style="color: orangered"><strong> 30000</span>;</p>
+
+                            <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> prestacao  </span>=<span style="color: orangered"><strong> 750</span>;</p>
+
+                            <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> entrada  </span>=<span style="color: orangered"><strong> 3000</span>;</p>
+
+                            <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> parcelas  </span>=<span style="color: orangered"></span><span style="color: purple">(<span style="color: blue"> valor</span> - <span style="color: blue"> entrada</span><span style="color: purple">) </span>/<span style="color: blue"> prestacao</span>;</p>
+
+                            <p><span style="color: blue"> parcelas</span> =<span style="color: orangered"> 36</span>;</p>
+
+                            <p>f) <strong>pretocinzabranco = 16 caracteres.</strong></p>                                   
+                        </div>
+                    </div>                         
+                </form>            
+            </article>
+            <footer>
+                <div class="ajustt">
+                    <p><small>&copy; Todos os direitos reservados. Desenvolvido por: Matheus da Costa Ribeiro. </small></p> 
+                </div>
+
+            </footer> 
+        </section>
+    </body>
+</html>
