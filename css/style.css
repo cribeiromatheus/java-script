@@ -97,6 +97,11 @@ h2 {
     width: 100px;
     height: 50px;   
 }
+
+#exercicio p {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
 /*Classes*/
 .buttonjava {
     background-color: rgb(255, 217, 0);
@@ -110,6 +115,20 @@ h2 {
 
 .imgrespon img {
     width: 100%;
+}
+
+.ajustt {
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    height: 60px;
+    top: 2200px;
+}
+
+.ajustt {
+    color: white;
+    text-align: center;
+    padding-top: 2.5rem;
 }
 
 @media(max-width: 1180px){
