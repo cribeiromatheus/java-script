@@ -22,7 +22,7 @@
         </header>
         <marquee position="left">Exercício para avaliação EBAC! Desenvoldido por Matheus da Costa Ribeiro</marquee>
         <section>        
-            <article>
+            <article id="prm" align="center">
                 <div id="container" align="center">
                     <h3>Operadores Aritiméticos</h3>
                     <form id="form1">
@@ -131,78 +131,80 @@
             </article>
             <article id="segp">
                 <form id="form11">
-                    <div id="media" align="center">
-                        <h3 style="width: 560px;">Média de notas para avaliação</h3>
-                        <h2>Média</h2>
-                        <input type="text" id="n1" placeholder="Primeiro Bimestre">
-                        <input type="text" id="n2" placeholder="Segundo Bimestre">
-                        <input type="text" id="n3" placeholder="Terceiro Bimestre">
-                        <input type="text" id="n4" placeholder="Quarto Bimestre"> 
-                        <input type="button" class="buttonjava" value="Calcular" onclick="calcula()">     
-                        <div class="imgrespon">
-                            <img src="./img/escola.svg" alt="imagem da sala de aula">
-                            <div id="resultmedia" align="center"></div>
-                        </div>                    
-                    </div>
-                    <h3 align="center" style="width: 560px">Exercício para Avaliação</h3>
-                    <div id="exercicio">
-                        <p>10 + 15 = 25 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>"10" + 2 = 102 (<span style="font-weight: bold; color: green">string</span>)</p>
-                        <p>"10" * 2 = 20 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>"10" / 3 = 3.333 (<span style="font-weight: bold; color: purple">float</span>)</p>
-                        <p>"10" % 3 = 1 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>"10" + true = 11 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>10 == "10" = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>10 === "10" = false (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>10 < 11 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>10 > 12 = false (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>10 <= 10.1 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>10 > 9.99 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>10 != "dez" = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>"10" + true = 11 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>"dez" + true = deztrue (<span style="font-weight: bold; color: green">string</span>)</p>
-                        <p>10 + false = 10 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>10 * false = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>true + true = 2 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>10++ = (<span style="font-weight: bold; color: darkgreen">incremento de 1 em 1</span>)</p>
-                        <p>10-- = (<span style="font-weight: bold; color: red">decremento de 1 em 1</span>)</p>
-                        <p>1 & 1 = 1 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>1 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>0 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>1 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>0 / 1 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>5 + 5 == 10 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>"5" * 2 > 9 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
-                        <p>(10 + 10) * 2 = 40 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        <p>10 + 10 * 2 = 30 (<span style="font-weight: bold; color: orangered">number</span>)</p>
-                        
-                        <p><span style="font-weight: bold; color: black    ">2- Responda as perguntas de acordo com as variáveis: </span></p>
+                    <div id="container3">
+                        <div id="media" align="center">
+                            <h3 style="width: 100%">Média de notas para avaliação</h3>
+                            <h2>Média</h2>
+                            <input type="text" id="n1" placeholder="Primeiro Bimestre">
+                            <input type="text" id="n2" placeholder="Segundo Bimestre">
+                            <input type="text" id="n3" placeholder="Terceiro Bimestre">
+                            <input type="text" id="n4" placeholder="Quarto Bimestre"> 
+                            <input type="button" class="buttonjava" value="Calcular" onclick="calcula()">     
+                            <div class="imgrespon">
+                                <img src="./img/escola.svg" alt="imagem da sala de aula">
+                                <div id="resultmedia" align="center"></div>
+                            </div>                    
+                        </div>
+                        <h3 align="center" style="width: 100%">Exercício para Avaliação</h3>
+                        <div id="exercicio">
+                            <p>10 + 15 = 25 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>"10" + 2 = 102 (<span style="font-weight: bold; color: green">string</span>)</p>
+                            <p>"10" * 2 = 20 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>"10" / 3 = 3.333 (<span style="font-weight: bold; color: purple">float</span>)</p>
+                            <p>"10" % 3 = 1 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>"10" + true = 11 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>10 == "10" = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 === "10" = false (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 < 11 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 > 12 = false (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 <= 10.1 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 > 9.99 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>10 != "dez" = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>"10" + true = 11 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>"dez" + true = deztrue (<span style="font-weight: bold; color: green">string</span>)</p>
+                            <p>10 + false = 10 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>10 * false = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>true + true = 2 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>10++ = (<span style="font-weight: bold; color: darkgreen">incremento de 1 em 1</span>)</p>
+                            <p>10-- = (<span style="font-weight: bold; color: red">decremento de 1 em 1</span>)</p>
+                            <p>1 & 1 = 1 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>1 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>0 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>1 & 0 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>0 / 1 = 0 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>5 + 5 == 10 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>"5" * 2 > 9 = true (<span style="font-weight: bold; color: blue">boolean</span>)</p>
+                            <p>(10 + 10) * 2 = 40 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            <p>10 + 10 * 2 = 30 (<span style="font-weight: bold; color: orangered">number</span>)</p>
+                            
+                            <p><span style="font-weight: bold; color: black    ">2- Responda as perguntas de acordo com as variáveis: </span></p>
 
-                        <p><span style="color: blue">var</span> branco = <span style="color: green">"preto"</span>;</p>
-                        <p><span style="color: blue">var</span> preto = <span style="color: green">"cinza"</span>;</p>
-                        <p><span style="color: blue">var</span> cinza = <span style="color: green">"branco"</span>;</p>
-                        <p><span style="color: blue">var</span> carro = <span style="color: green">"preto"</span>;</p>
-                        <p><span style="color: blue">var</span> valor = <span style="color: orangered">30000</span>;</p>
-                        <p><span style="color: blue">var</span> prestacao = <span style="color: orangered">750</span>;</p><br>
-                        <p>a) branco == <span style="color: green">"branco"</span>;<span style="color: blue;font-weight: bold;"> False</span>  - A variável branco está definida com o valor<span style="color: green"> "preto"</span>. </p>
-                        
-                        <p>b) branco == <span style="color: green">"cinza"</span>;<span style="color: blue;font-weight: bold;"> False</span> - Os valores de ambas as variáveis são diferentes <span style="color: purple"><strong>(</span>branco =<span style="color: green"> "preto"</span>, cinza =<span style="color: green"> "branco"</span><span style="color: purple">)</span>;</strong></p>
+                            <p><span style="color: blue">var</span> branco = <span style="color: green">"preto"</span>;</p>
+                            <p><span style="color: blue">var</span> preto = <span style="color: green">"cinza"</span>;</p>
+                            <p><span style="color: blue">var</span> cinza = <span style="color: green">"branco"</span>;</p>
+                            <p><span style="color: blue">var</span> carro = <span style="color: green">"preto"</span>;</p>
+                            <p><span style="color: blue">var</span> valor = <span style="color: orangered">30000</span>;</p>
+                            <p><span style="color: blue">var</span> prestacao = <span style="color: orangered">750</span>;</p><br>
+                            <p>a) branco == <span style="color: green">"branco"</span>;<span style="color: blue;font-weight: bold;"> False</span>  - A variável branco está definida com o valor<span style="color: green"> "preto"</span>. </p>
+                            
+                            <p>b) branco == <span style="color: green">"cinza"</span>;<span style="color: blue;font-weight: bold;"> False</span> - Os valores de ambas as variáveis são diferentes <span style="color: purple"><strong>(</span>branco =<span style="color: green"> "preto"</span>, cinza =<span style="color: green"> "branco"</span><span style="color: purple">)</span>;</strong></p>
 
-                        <p>c) carro === branco</span>;<span style="color: blue;font-weight: bold;"> True</span>.  As variáveis são iguais tanto em valor quanto em tipo.</p>
+                            <p>c) carro === branco</span>;<span style="color: blue;font-weight: bold;"> True</span>.  As variáveis são iguais tanto em valor quanto em tipo.</p>
 
-                        <p>d) A variável cavalo possui o valor de<span style="color: green">"cinza"</span>.</p>
+                            <p>d) A variável cavalo possui o valor de<span style="color: green">"cinza"</span>.</p>
 
-                        <p>e)<br><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> valor  </span>=<span style="color: orangered"><strong> 30000</span>;</p>
+                            <p>e)<br><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> valor  </span>=<span style="color: orangered"><strong> 30000</span>;</p>
 
-                        <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> prestacao  </span>=<span style="color: orangered"><strong> 750</span>;</p>
+                            <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> prestacao  </span>=<span style="color: orangered"><strong> 750</span>;</p>
 
-                        <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> entrada  </span>=<span style="color: orangered"><strong> 3000</span>;</p>
+                            <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> entrada  </span>=<span style="color: orangered"><strong> 3000</span>;</p>
 
-                        <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> parcelas  </span>=<span style="color: orangered"></span><span style="color: purple">(<span style="color: blue"> valor</span> - <span style="color: blue"> entrada</span><span style="color: purple">) </span>/<span style="color: blue"> prestacao</span>;</p>
+                            <p><span style="color: purple; font-weight: bold;">let</span><span style="color: blue;font-weight: bold;"> parcelas  </span>=<span style="color: orangered"></span><span style="color: purple">(<span style="color: blue"> valor</span> - <span style="color: blue"> entrada</span><span style="color: purple">) </span>/<span style="color: blue"> prestacao</span>;</p>
 
-                        <p><span style="color: blue"> parcelas</span> =<span style="color: orangered"> 36</span>;</p>
+                            <p><span style="color: blue"> parcelas</span> =<span style="color: orangered"> 36</span>;</p>
 
-                        <p>f) <strong>pretocinzabranco = 16 caracteres.</strong></p>                                   
+                            <p>f) <strong>pretocinzabranco = 16 caracteres.</strong></p>                                   
+                        </div>
                     </div>                         
                 </form>            
             </article>

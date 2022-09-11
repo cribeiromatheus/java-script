@@ -84,10 +84,6 @@ h2 {
     margin-right: 5rem;
 }
 
-#segp {
-    border: 2px solid #000;    
-}
-
 #resultmedia {
     position: absolute;
     color: white;
@@ -101,6 +97,11 @@ h2 {
 #exercicio p {
     padding-left: 10px;
     margin-bottom: 10px;
+}
+
+#container3 {
+    overflow: hidden;
+    border: 2px solid #000;
 }
 /*Classes*/
 .buttonjava {
@@ -131,6 +132,24 @@ h2 {
     padding-top: 2.5rem;
 }
 
+@media(max-width: 1314px){
+    #segp {
+        width: 80%;
+        margin: 0 0 0 10%;
+        float: center;
+    }
+    #media h3 {
+        width: 97.5% !important;
+    }
+    #prm {
+        width: 65%;
+        margin-left: 20%;
+    }
+    .ajustt {
+        top: 3000px;
+    }    
+}
+
 @media(max-width: 1180px){
     #restodivisao {
         left: 30px;
@@ -138,13 +157,25 @@ h2 {
     }
 
 }
-
 @media(max-width: 923px){
     #multiplicacao {
         left: 250px;
         top: 350px;
     }
 
+}
+
+@media(max-width: 844px){
+    #container2 {
+        margin-top: 1rem;
+    }
+    .ajustt {
+        top: 3800px;
+    }
+    #prm {
+        width: 50%;
+        margin-left: 40%; 
+    }
 }
 
 @media(max-width: 685px){
@@ -165,6 +196,11 @@ h2 {
     header h1 {
         font-size: 4rem !important;
     }
+    #prm {
+        margin-left: 30%;
+    }
+}
+
 
     @media(max-width: 450px){
         #multiplicacao {            
@@ -210,5 +246,4 @@ h2 {
             font-size: 2rem !important;
             padding-top: .5rem !important;
         }
-    }
 }
